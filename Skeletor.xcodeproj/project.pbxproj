@@ -10,6 +10,9 @@
 		C600FD032126F46300E060E8 /* Skeletor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C600FCF92126F46300E060E8 /* Skeletor.framework */; };
 		C600FD082126F46300E060E8 /* SkeletorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C600FD072126F46300E060E8 /* SkeletorTests.swift */; };
 		C600FD0A2126F46300E060E8 /* Skeletor.h in Headers */ = {isa = PBXBuildFile; fileRef = C600FCFC2126F46300E060E8 /* Skeletor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C600FD162127064800E060E8 /* SkeletorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C600FD152127064800E060E8 /* SkeletorView.swift */; };
+		C600FD182127065F00E060E8 /* GradientDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C600FD172127065F00E060E8 /* GradientDirection.swift */; };
+		C600FD1A2127071200E060E8 /* SkeletorGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C600FD13212701C300E060E8 /* SkeletorGradientLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		C600FD022126F46300E060E8 /* SkeletorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkeletorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C600FD072126F46300E060E8 /* SkeletorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletorTests.swift; sourceTree = "<group>"; };
 		C600FD092126F46300E060E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C600FD13212701C300E060E8 /* SkeletorGradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletorGradientLayer.swift; sourceTree = "<group>"; };
+		C600FD152127064800E060E8 /* SkeletorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletorView.swift; sourceTree = "<group>"; };
+		C600FD172127065F00E060E8 /* GradientDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientDirection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				C600FCFC2126F46300E060E8 /* Skeletor.h */,
+				C600FD152127064800E060E8 /* SkeletorView.swift */,
+				C600FD13212701C300E060E8 /* SkeletorGradientLayer.swift */,
+				C600FD172127065F00E060E8 /* GradientDirection.swift */,
 				C600FCFD2126F46300E060E8 /* Info.plist */,
 			);
 			path = Skeletor;
@@ -148,6 +157,7 @@
 				TargetAttributes = {
 					C600FCF82126F46300E060E8 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					C600FD012126F46300E060E8 = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C600FD182127065F00E060E8 /* GradientDirection.swift in Sources */,
+				C600FD1A2127071200E060E8 /* SkeletorGradientLayer.swift in Sources */,
+				C600FD162127064800E060E8 /* SkeletorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +352,7 @@
 		C600FD0E2126F46300E060E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.f1re.Skeletor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +379,7 @@
 		C600FD0F2126F46300E060E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +405,7 @@
 		C600FD112126F46300E060E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97NL7NZ9K6;
 				INFOPLIST_FILE = SkeletorTests/Info.plist;
@@ -407,6 +424,7 @@
 		C600FD122126F46300E060E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97NL7NZ9K6;
 				INFOPLIST_FILE = SkeletorTests/Info.plist;
